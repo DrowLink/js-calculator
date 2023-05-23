@@ -2,7 +2,7 @@ js-calculadora
 
 Este es uno de mis primeros proyectos. La estructura-sintaxis de la calculadora no es mi idea original, hecha con fines educativos.
 
-EXPLICACIÓN DE LA ESTRUCTURA HTML:
+### EXPLICACIÓN DE LA ESTRUCTURA HTML: ###
 
     <input type="text" class="screen" id="screen" placeholder="0">
     <button class="symbol" onclick="wipe()">AC</button>
@@ -32,7 +32,7 @@ EXPLICACIÓN DE LA ESTRUCTURA HTML:
 
 La estructura HTML hecha de esta manera para encajar con un diseño típico de calculadora. Clases utilizadas para aplicar CSS. Hablando de etiquetas de botón, el atributo onclick está vinculado con funciones .js que desarrollan el proceso para mostrar un resultado correcto.
 
-EXPLICACIÓN DE LA ESTRUCTURA CSS:
+### EXPLICACIÓN DE LA ESTRUCTURA CSS: ###
 
       * {
     box-sizing: border-box;
@@ -156,3 +156,35 @@ Ligera transición en Botones y más estilos agregados
     }
 
 Definición de los colores de los botones y sus desplazamientos (cuando el mouse se coloca en el botón cambia su color)
+
+### EXPLICACIÓN DE LÍNEAS JS: ###
+
+    let display = document.getElementById('screen')
+
+Selector DOM para mostrar la lógica en la entrada
+
+    const wipe = () => {
+        display.value = '';
+    }
+
+Borra las funciones cuando presiona AC o C, establece el valor de visualización en indefinido (sale como vacío para los usuarios)
+
+    const show = (n) => {
+        display.value += n;
+    }
+
+Forma abstracta y también inteligente de poner números en la pantalla id = "screen" (entrada)
+
+    const calc = () => {
+        display.value = eval(display.value);
+    }
+
+Da el resultado gracias al objeto global "eval" que resuelve un problema aritmético de cadenas.
+
+por ejemplo, si tiene una cadena:
+
+            let resolve = "(2 * 5) - 6" (typeof string)
+            
+hacer eval() resolverá la cadena como si fueran números
+
+            eval(resolve) ==> console output : 4
