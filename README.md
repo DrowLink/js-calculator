@@ -1,6 +1,13 @@
 # js-calculator
 js-calculator
 
+
+<p align="center">
+  <img src="https://github.com/DrowLink/js-calculator/assets/111207841/6fa8069d-a42e-49a7-b5d7-dc55ac799082" alt="Sublime's custom image"/>
+</p>
+
+<br/>
+
 This is one of my first projects. The calculator structure-syntax is not my original idea, done with educational purposes.
 
 ### EXPLAINING HTML STRUCTURE: ###
