@@ -165,3 +165,39 @@ Slight transition in Buttons and more styles added
     
     
 Defining buttons colors and their hovers (when mouse placed on button changes its color)
+
+
+EXPLAINING JS LINES:
+
+    let display = document.getElementById('screen')
+
+DOM selector to show the logical on the input
+
+    const wipe = () => {
+        display.value = '';
+    }
+    
+ Clear functions when you press AC or C, sets the display value to undefined (or empty for users)
+    
+    const show = (n) => {
+        display.value += n;
+    }
+    
+ Abstract and also smart way to put numbers on the display id="screen" (input)
+ 
+    const calc = () => {
+        display.value = eval(display.value);
+    }
+    
+ Gives the result thanks the global object eval that resolve an string arithmetic problems
+ 
+ for example if you have one string: 
+ 
+                let resolve = "(2 * 5) - 6" (typeof string)
+                
+doing the eval() will resolve the string as if they were numbers
+
+                eval(resolve) ==> console output : 4
+                
+                
+
