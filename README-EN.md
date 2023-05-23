@@ -3,7 +3,7 @@ js-calculator
 
 This is one of my first projects. The calculator structure-syntax is not my original idea, done with educational purposes.
 
-EXPLAINING HTML STRUCTURE:
+### EXPLAINING HTML STRUCTURE: ###
 
     <input type="text" class="screen" id="screen" placeholder="0">
     <button class="symbol" onclick="wipe()">AC</button>
@@ -37,7 +37,7 @@ classes used to apply CSS.
 Talking about Button tags, the onclick attribute is linked with .js functions that develops the process in order to show a correct result.
 
 
-EXPLAINING CSS STRUCTURE:
+### EXPLAINING CSS STRUCTURE: ###
 
       * {
     box-sizing: border-box;
@@ -167,7 +167,7 @@ Slight transition in Buttons and more styles added
 Defining buttons colors and their hovers (when mouse placed on button changes its color)
 
 
-EXPLAINING JS LINES:
+### EXPLAINING JS LINES: ###
 
     let display = document.getElementById('screen')
 
