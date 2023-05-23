@@ -2,6 +2,12 @@ js-calculadora
 
 Este es uno de mis primeros proyectos. La estructura-sintaxis de la calculadora no es mi idea original, hecha con fines educativos.
 
+<p align="center">
+  <img src="https://github.com/DrowLink/js-calculator/assets/111207841/6fa8069d-a42e-49a7-b5d7-dc55ac799082" alt="Sublime's custom image"/>
+</p>
+
+<br/>
+
 ### EXPLICACIÓN DE LA ESTRUCTURA HTML: ###
 
     <input type="text" class="screen" id="screen" placeholder="0">
