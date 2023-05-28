@@ -76,6 +76,7 @@ button:focus {
     color: #fff;
 }
 
+/* This is a single-line comment */
 .symbol,
 .number {
     display: flex;
